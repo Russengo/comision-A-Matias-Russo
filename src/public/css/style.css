@@ -1,0 +1,84 @@
+body {
+  background-color: #d4dfeb;
+}
+
+
+#container-row {
+  margin-top: 20px;
+}
+
+
+/* Estilo para el encabezado h1 */
+h1 {
+  text-align: center;
+  padding: 20px; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+}
+
+/* Estilo para el boton */
+.btn-new {
+  background-color: #3498db; 
+  border: none;
+  color: #000000; 
+  border-radius: 5px; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-new:hover {
+  background-color: #2980b9; /* Color de fondo al pasar el cursor */
+}
+
+.btn-new:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al enfocar el botón */
+}
+
+/* Estilo para sombras en tarjetas (cards) */
+.card {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bordes redondeados en imagenes */
+.card-img-top {
+  border-radius: 10px;
+}
+
+/* Animación de desplazamiento suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animación de hover en imágenes */
+.card-img-top {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* Escala la imagen al pasar el cursor */
+}
+
+/* Animación de fondo difuminado */
+@keyframes backgroundChange {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 200% 100%;
+  }
+  75% {
+    background-position: 100% 200%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
